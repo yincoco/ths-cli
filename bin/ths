@@ -1,0 +1,9 @@
+#! /usr/bin/env node
+
+var gitDownload = require('download-git-repo');
+var program = require('commander');
+
+program.version(require('../package').version)
+       .usage('<command> [options]')
+       .command('init [name]','初始化模板类型，[vue]，[react]，[react-native]')
+       .parse(process.argv)

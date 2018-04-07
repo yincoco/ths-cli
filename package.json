@@ -1,0 +1,19 @@
+{
+  "name": "ths-cli",
+  "version": "1.0.0",
+  "description": "止在解决内网vue-cli和ract-native这些脚手架无法使用的情况",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ths": "bin/ths"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "download-git-repo": "^1.0.2"
+  }
+}

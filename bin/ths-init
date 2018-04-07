@@ -1,0 +1,19 @@
+#! /usr/bin/env node
+
+var gitDownload = require('download-git-repo');
+var program = require('commander');
+var path = require('path');
+program.option('vue','初始化vue模板')
+       .parse(process.argv); 
+
+if(program.vue){
+    download('vuejs/vue#master');
+}
+
+
+function download(template){
+    gitDownload(template, process.cwd(), function (err) {
+        console.log(err ? 'Error' : 'Success')
+        console.log(err);
+      })
+}
